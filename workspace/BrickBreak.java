@@ -149,7 +149,7 @@ public class BrickBreak extends JPanel implements KeyListener, ActionListener {
 							ball.setX(map[i][j].getX()-ball.getSize() -1);
 							ball.reverseX();
 						} else if(ball.getXpos() + 1 >= map[i][j].getX() + map[i][j].getWidth()) {
-							ball.setX(map[i][j].getX()+map[i][j].getWidth() +1);
+							ball.setY(map[i][j].getX()+map[i][j].getWidth() +1);
 							ball.reverseX();
 						}else {
 							ball.reverseY();
